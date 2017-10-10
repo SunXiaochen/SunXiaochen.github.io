@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		#btn{width: 85px;height: 40px;background:#fc8052;text-align: center;line-height: 30px;font-size: 10px;border: none;color: white}
+		#btn:hover{background: #333}
+		#wrap{width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;top: 0;left: 0;display: none}
+		#box{width: 80vw;position: absolute;top: 20vh;left: 10vw;display: none}
+		#frist{width: 100%;height: 70px;background: #fc8052;color: white;font-size: 28px;line-height: 70px;padding-left: 20px;padding-right: 20px}
+		#s{float: right;right: 0;top: 0;font-size: 25px;font-weight: bold;}
+		#s:hover{color: black}
+		#second{width: 100%;padding: 20px;background: white}
+		#last{width: 100%;height: 50px;background: #fc8052;text-align: center;line-height: 50px;font-size: 20px;color: white;padding-left: 20px;padding-right: 20px}
+	</style>
+</head>
+<body>
+	<button id="btn">弹弹弹</button>
+	<div id="wrap"></div>
+		<div id="box">
+			<div id="frist">弹窗头部 
+				<span id="s">×</span>
+			</div>
+			<div id="second">
+				<p>这是一个弹窗效果</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ullam, blanditiis, quos corrupti voluptate minus vero alias, atque velit et aspernatur, ratione distinctio. Corporis, ex perferendis. Nisi, doloribus. Quis, harum.</span>
+			</div>
+			<div id="last">弹窗底部</div>
+		</div>
+	
+</body>
+<script>
+	var btn = document.getElementById('btn');
+	var wrap = document.getElementById('wrap');
+	var box = document.getElementById('box');
+	var s = document.getElementById('s')
+	btn.onclick = function(){
+		wrap.style.display = "block"
+		box.style.display = "block"
+	}
+	s.onclick = function(){
+		wrap.style.display = "none"
+	    box.style.display = "none";
+
+	}
+	wrap.onclick = function(){
+	    wrap.style.display = "none";
+	    box.style.display = "none";
+	}
+</script>
+</html>
