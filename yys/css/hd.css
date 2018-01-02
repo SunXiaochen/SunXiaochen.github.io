@@ -1,0 +1,235 @@
+/*基础css*/
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+/*基础css结束*/
+/*音乐*/
+#music{
+	width: 60px;
+	height: 60px;
+	/*border: 2px solid blue;*/
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 9;
+}
+#music .music_bg{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+@keyframes music{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+#music .music_pic{
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	animation: music 2s linear infinite;
+}
+/*音乐结束*/
+/*第一屏*/
+.swiper-slide.one{
+	background-image: url(../images/bg1.png);
+	background-size: 100% 100%;
+}
+.one{
+	position: relative;
+}
+.one .b1_s{
+	width: 40vw;
+	position: absolute;
+	bottom: 3vh;
+	left: 3vw;
+}
+.one .b1_p{
+	position: absolute;
+	top: 20vh;
+	right: 10vw;
+	font-size: 10vw;
+	line-height: 6vh;
+	color: black;
+	transform:scale(1.5,1);  
+	/*background: red;*/
+	width: 20vw;
+	height: 50vh;
+}
+.one .b1_p img{
+	width: 100%;
+}
+/*第二屏*/
+.swiper-slide.two{
+	background-image: url(../images/bg2.png);
+	background-size: 100% 100%;
+	/*position: relative;*/
+}
+.swiper-wrapper.swiper-wrapper1{
+	height: 50vh;
+	position: absolute;
+	top: : 0;
+	left: 0;
+}
+.swiper-slide.frist{
+	background-color: rgba(0,0,0,0);
+	border-radius: 15px;
+}
+.frist img{
+	border-radius: 15px;
+}
+.rabbit{
+	position: absolute;
+	right: 15vw;
+	bottom: 3vh;
+}
+@keyframes gua{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(-1deg);
+	}
+	100%{
+		transform: rotate(1deg);
+	}
+}
+.gua{
+	position: absolute;
+	right: 15vw;
+	bottom: 15vh;
+	animation: gua 2s linear 2s infinite;
+}
+.gua img{
+	width: 80vw;
+}
+/*第三屏*/
+.third{
+	background-image: url(../images/bg3.jpeg);
+	background-size: 100% 100%;
+	position: relative;
+}
+/*.third img{
+}*/
+@keyframes btn1{
+	from{
+		transform: translateX(10vw) translateY(20vh);
+	}
+	to{
+		transform: translateX(0) translateY(0);
+	}
+}
+@keyframes btn2{
+	from{
+		transform: translateX(-10vw) translateY(20vh);
+	}
+	to{
+		transform: translateX(0) translateY(0);
+	}
+}
+@keyframes btn3{
+	from{
+		transform: translateX(10vw) translateY(-20vh);
+	}
+	to{
+		transform: translateX(0) translateY(0);
+	}
+}
+@keyframes btn4{
+	from{
+		transform: translateX(-10vw) translateY(-20vh);
+	}
+	to{
+		transform: translateX(0) translateY(0);
+	}
+}
+.btn1{
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 20vh;
+	left: 10vw;
+	/*animation: btn1 1s linear 0.5s;*/
+}
+.btn2{
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 20vh;
+	right: 10vw;
+	/*animation: btn2 2s linear 0.5s;*/
+}
+.btn3{
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 20vh;
+	left: 10vw;
+	/*animation: btn3 3s linear 0.5s;*/
+}
+.btn4{
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 20vh;
+	right: 10vw;
+	/*animation: btn4 4s linear 0.5s;*/
+}
+.btn5{
+	background: white;
+	border-radius: 50%;
+	animation: music 2s linear infinite;
+}
+.run{
+	animation: music 2s linear infinite;
+}
+/*第四屏*/
+.four{
+	background-image: url(../images/bg4.jpeg);
+	background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
